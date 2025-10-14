@@ -1,5 +1,5 @@
 # JGameGridLocal
-Can use local jdk and a batch script to run java files from .\robotsim\examples
+Can use local jdk with a batch script to run java files from .\robotsim\examples
 ## How to use
 First clone the repo.
 ```
