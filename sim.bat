@@ -14,14 +14,14 @@ for %%f in ("%filePath%") do (
 )
 
 if exist %filePath% (
-    if exist ".\jdk-21.0.8\bin\" (
+    if exist ".\jdk\bin\" (
         echo.
         echo compiling the file...
-        ".\jdk-21.0.8\bin\javac" -classpath %userClassPath% %filePath%
+        ".\jdk\bin\javac" -classpath %userClassPath% %filePath%
         echo compiling complete..
         echo.
         echo running the class file...
-        ".\jdk-21.0.8\bin\java" -cp .\robotsim\examples;%userClassPath% !fileName!
+        ".\jdk\bin\java" -cp .\robotsim\examples;%userClassPath% !fileName!
     ) else (
         echo Local JDK not found. using system JDK...
         echo.
